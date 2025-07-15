@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Idea Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+            border-radius: 0 0 20px 20px;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            border: none;
+        }
+        .result-section {
+            display: none;
+        }
+        .loading {
+            display: none;
+        }
+        .prompt-box {
+            background-color: #f1f3ff;
+            border-radius: 10px;
+            padding: 2rem;
+        }
+        .budget-table {
+            font-size: 0.9rem;
+        }
+        .budget-table th {
+            background-color: #f1f3ff;
+        }
+        .btn-generate {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            border: none;
+            padding: 10px 25px;
+            font-weight: 600;
+        }
+        .logframe-table {
+            font-size: 0.85rem;
+        }
+        .logframe-table th {
+            background-color: #f1f3ff;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Project Idea Generator</h1>
+            <p class="lead">Transform your idea into a complete project plan with all necessary components</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body prompt-box">
+                        <h3 class="card-title mb-4">Enter Your Project Idea</h3>
+                        <div class="mb-3">
+                            <label for="projectIdea" class="form-label">What's your project idea?</label>
+                            <input type="text" class="form-control form-control-lg" id="projectIdea" placeholder="e.g. Clean Water Initiative, Digital Literacy Program, etc.">
+                        </div>
+                        <div class="mb-3">
+                            <label for="sdgFocus" class="form-label">Primary SDG Focus (optional)</label>
+                            <select class="form-select" id="sdgFocus">
+                                <option value="">Select SDG (or leave blank for auto-detection)</option>
+                                <option value="SDG 1: No Poverty">SDG 1: No Poverty</option>
+                                <option value="SDG 2: Zero Hunger">SDG 2: Zero Hunger</option>
+                                <option value="SDG 3: Good Health and Well-being">SDG 3: Good Health and Well-being</option>
+                                <option value="SDG 4: Quality Education">SDG 4: Quality Education</option>
+                                <option value="SDG 5: Gender Equality">SDG 5: Gender Equality</option>
+                                <option value="SDG 6: Clean Water and Sanitation">SDG 6: Clean Water and Sanitation</option>
+                                <option value="SDG 7: Affordable and Clean Energy">SDG 7: Affordable and Clean Energy</option>
+                                <option value="SDG 8: Decent Work and Economic Growth">SDG 8: Decent Work and Economic Growth</option>
+                                <option value="SDG 9: Industry, Innovation and Infrastructure">SDG 9: Industry, Innovation and Infrastructure</option>
+                                <option value="SDG 10: Reduced Inequalities">SDG 10: Reduced Inequalities</option>
+                                <option value="SDG 11: Sustainable Cities and Communities">SDG 11: Sustainable Cities and Communities</option>
+                                <option value="SDG 12: Responsible Consumption and Production">SDG 12: Responsible Consumption and Production</option>
+                                <option value="SDG 13: Climate Action">SDG 13: Climate Action</option>
+                                <option value="SDG 14: Life Below Water">SDG 14: Life Below Water</option>
+                                <option value="SDG 15: Life on Land">SDG 15: Life on Land</option>
+                                <option value="SDG 16: Peace, Justice and Strong Institutions">SDG 16: Peace, Justice and Strong Institutions</option>
+                                <option value="SDG 17: Partnerships for the Goals">SDG 17: Partnerships for the Goals</option>
+                            </select>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary btn-generate" id="generateBtn">Generate Project Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loading text-center my-5" id="loadingSpinner">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3">Generating your comprehensive project plan...</p>
+                </div>
+
+                <div class="result-section card" id="resultSection">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h3 class="card-title mb-0">Your Project Plan</h3>
+                            <button class="btn btn-sm btn-outline-secondary" id="copyBtn">Copy to Clipboard</button>
+                        </div>
+                        
+                        <div id="projectOutput">
+                            <!-- Generated content will appear here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 py-4 text-center text-muted">
+        <p>Project Idea Generator &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
