@@ -103,17 +103,17 @@ document.addEventListener('DOMContentLoaded', function () {
 # Importance & Description
 
 ## Importance
-[3-4 concise paragraphs on why this matters]
+[1-2 concise paragraphs on why this matters]
 
 ## Description
-[4-5 well-structured paragraphs about the project]
+[2-3 well-structured paragraphs about the project]
 
 # Objectives and Activities
 
 ## Objectives
-1. [Clear, measurable objective 1]
-2. [Clear, measurable objective 2]
-3. [Clear, measurable objective 3]
+1. [measurable objective 1]
+2. [measurable objective 2]
+3. [measurable objective 3]
 
 ## Key Activities
 | Activity                          | Description                                                                 | Timeline     |
@@ -142,17 +142,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 # Budget Estimates
 
-## Small Budget (Basic)
+## Small Budget within 5000 BDT (Basic)
 | Item             | Quantity | Unit Cost (BDT) | Total (BDT) |
 |------------------|----------|-----------------|-------------|
 | [Item 1]         | [Qty]    | [Cost]          | [Total]     |
 
-## Medium Budget (Standard)
+## Medium Budget within 20000 BDT (Standard)
 | Item             | Quantity | Unit Cost (BDT) | Total (BDT) |
 |------------------|----------|-----------------|-------------|
 | [Item 1]         | [Qty]    | [Cost]          | [Total]     |
 
-## Large Budget (Comprehensive)
+## Large Budget within 50000 BDT (Comprehensive)
 | Item             | Quantity | Unit Cost (BDT) | Total (BDT) |
 |------------------|----------|-----------------|-------------|
 | [Item 1]         | [Qty]    | [Cost]          | [Total]     |
