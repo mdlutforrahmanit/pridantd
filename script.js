@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Updated API keys configuration with fallback keys
     const API_KEYS = [
-        'AIzaSyARZVbDWrFoJl3DqE7aVa6lT_N3DPdaW80',  // Primary key
-        'AIzaSyCDjKkgkJufNQn21yWMyXOh21Y4G_vHt8', // Backup key 1
-		'AIzaSyAqDgSZnIn1P5458gkcF2y3rnIk1TzMY-8', // Backup key 1
-		'AIzaSyBoF-VSyuiZ2451gh387_FxATjc6F_Ac', // Backup key 1
-		'AIzaSyCo6ez-Bn1H1_Agz7854FlftyIziHpA', // Backup key 1
-		'AIzaSyC7S1vwCbXgYx847414p44y_29EOcss', // Backup key 1
-        'AIzaSyARZVbDWrFoJl3DqE7647415547aW80'  // Backup key 2
+        'AIzaSyAc0YpOKzK-UJHC7Q_i19TYZUYfbJ8SbOo',  // Primary key
+        'AIzaSyCDjKkgkJufNQn21yWMyXOhXl7Y4G_vHt8', // Backup key 1
+		'AIzaSyAqDgSZnIn1PDg2RgkcF2y3rnIk1TzMY-8', // Backup key 1
+		'AIzaSyBoF-VSyuiZ66Z9_4gh387_FxATjc6F_Ac', // Backup key 1
+		'AIzaSyCo6ez-Bn1H1_Agz7vs56fBFlftyIziHpA', // Backup key 1
+		'AIzaSyC7S1vwCbXgYxDhkn8eNFqp44y_29EOcss', // Backup key 1
+        'AIzaSyARZVbDWrFoJl3DqE7aVa6lT_N3DPdaW80'  // Backup key 2
     ];
     let currentApiKeyIndex = 0;
     const getCurrentApiUrl = () => `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEYS[currentApiKeyIndex]}`;
@@ -103,17 +103,17 @@ document.addEventListener('DOMContentLoaded', function () {
 # Importance & Description
 
 ## Importance
-[1-2 concise paragraphs on why this matters]
+[3-4 concise paragraphs on why this matters]
 
 ## Description
-[2-3 well-structured paragraphs about the project]
+[4-5 well-structured paragraphs about the project]
 
 # Objectives and Activities
 
 ## Objectives
-1. [measurable objective 1]
-2. [measurable objective 2]
-3. [measurable objective 3]
+1. [Clear, measurable objective 1]
+2. [Clear, measurable objective 2]
+3. [Clear, measurable objective 3]
 
 ## Key Activities
 | Activity                          | Description                                                                 | Timeline     |
@@ -142,17 +142,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 # Budget Estimates
 
-## Small Budget within 5000 BDT (Basic)
+## Small Budget (Basic)
 | Item             | Quantity | Unit Cost (BDT) | Total (BDT) |
 |------------------|----------|-----------------|-------------|
 | [Item 1]         | [Qty]    | [Cost]          | [Total]     |
 
-## Medium Budget within 20000 BDT (Standard)
+## Medium Budget (Standard)
 | Item             | Quantity | Unit Cost (BDT) | Total (BDT) |
 |------------------|----------|-----------------|-------------|
 | [Item 1]         | [Qty]    | [Cost]          | [Total]     |
 
-## Large Budget within 50000 BDT (Comprehensive)
+## Large Budget (Comprehensive)
 | Item             | Quantity | Unit Cost (BDT) | Total (BDT) |
 |------------------|----------|-----------------|-------------|
 | [Item 1]         | [Qty]    | [Cost]          | [Total]     |
