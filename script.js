@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Updated API keys configuration with fallback keys
     const API_KEYS = [
-        'AIzaSyAc0YpOKzK-UJHC7Q_i19TYZUYfbJ8SbOo',  // Primary key
-        'AIzaSyCDjKkgkJufNQn21yWMyXOhXl7Y4G_vHt8', // Backup key 1
-		'AIzaSyAqDgSZnIn1PDg2RgkcF2y3rnIk1TzMY-8', // Backup key 1
-		'AIzaSyBoF-VSyuiZ66Z9_4gh387_FxATjc6F_Ac', // Backup key 1
-		'AIzaSyCo6ez-Bn1H1_Agz7vs56fBFlftyIziHpA', // Backup key 1
-		'AIzaSyC7S1vwCbXgYxDhkn8eNFqp44y_29EOcss', // Backup key 1
-        'AIzaSyARZVbDWrFoJl3DqE7aVa6lT_N3DPdaW80'  // Backup key 2
+        'AIzaSyARZVbDWrFoJl3DqE7aVa6lT_N3DPdaW80',  // Primary key
+        'AIzaSyCDjKkgkJufNQn21yWMyXOh21Y4G_vHt8', // Backup key 1
+		'AIzaSyAqDgSZnIn1P5458gkcF2y3rnIk1TzMY-8', // Backup key 1
+		'AIzaSyBoF-VSyuiZ2451gh387_FxATjc6F_Ac', // Backup key 1
+		'AIzaSyCo6ez-Bn1H1_Agz7854FlftyIziHpA', // Backup key 1
+		'AIzaSyC7S1vwCbXgYx847414p44y_29EOcss', // Backup key 1
+        'AIzaSyARZVbDWrFoJl3DqE7647415547aW80'  // Backup key 2
     ];
     let currentApiKeyIndex = 0;
     const getCurrentApiUrl = () => `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEYS[currentApiKeyIndex]}`;
